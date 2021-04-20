@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3/css/all.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
@@ -15,17 +16,89 @@
             <div class="grid">
                 <nav class="navbar">
                      <ul class="navbar__list">
-                         <li class="navbar__item navbar__item--separate">Vào cửa hàng trên ứng dụng F8-Shop</li>
-                         <li class="navbar__item">Kết nối</li>
+                         <li class="navbar__item navbar__item--separate navbar__item--has-qr">
+                             Vào cửa hàng trên ứng dụng F8-Shop
+                            
+                             <!-- QR code section -->
+                            <div class="qr">
+                                <img src="./assets/img/qr_code.png" alt="" class="qr__img">
+                                <div class="qr__download-app">
+                                    <a href="" class="qr__link">
+                                        <img src="./assets/img/app_store.png" alt="app store" class="qr__app">
+                                    </a>
+
+                                    <a href="" class="qr__link">
+                                        <img src="./assets/img/google_play.png" alt="google play" class="qr__app">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End QR code section -->
+                         </li>
+                         <li class="navbar__item navbar__title--no-pointer">
+                             <span class="">Kết nối</span>
+                             <a href="#face" class="navbar__link-icon">
+                                <i class="navbar__icon fab fa-facebook"></i>
+                             </a>
+                             <a href="#insta" class="navbar__link-icon">
+                                <i class="navbar__icon fab fa-instagram"></i>
+                             </a>
+                         </li>
                      </ul>
     
                      <ul class="navbar__list">
                         <li class="navbar__item">
-                           <a href="#" class="navbar__link">Thông báo</a>
+                           <a href="#" class="navbar__link">
+                            <i class="navbar__icon fas fa-bell"></i>
+                               Thông báo
+                            </a>
+                            <div class="navbar__notify">
+                                <header class="navbar__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="navbar__notify-list">
+                                    <li class="navbar__notify-item  navbar__notify-item--viewed">
+                                        <a href="#" class="navbar__notify-link">
+                                            <img src="https://lh3.googleusercontent.com/proxy/JDLTbxtG6iKCTnZnQGmgboPEKmBYXuiqAAQikVIcc8uZXkXoYhPSFGVUeQFUe1s-hiz47046beftuTk4fLFX7kRJ2mM9NFUVHb5wwUopbP7mKjatsxqSikLC5a99GNMD7gSD5UVlUJdjWYE" alt="" class="navbar__notify-img">
+                                            <div class="navbar__notify-info">
+                                                <span class="navbar__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                                <span class="navbar__notify-desc">Mô tả Mỹ phẩm Ohui chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="navbar__notify-item">
+                                        <a href="#" class="navbar__notify-link">
+                                            <img src="https://lh3.googleusercontent.com/proxy/JDLTbxtG6iKCTnZnQGmgboPEKmBYXuiqAAQikVIcc8uZXkXoYhPSFGVUeQFUe1s-hiz47046beftuTk4fLFX7kRJ2mM9NFUVHb5wwUopbP7mKjatsxqSikLC5a99GNMD7gSD5UVlUJdjWYE" alt="" class="navbar__notify-img">
+                                            <div class="navbar__notify-info">
+                                                <span class="navbar__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                                <span class="navbar__notify-desc">Mô tả Mỹ phẩm Ohui chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="navbar__notify-item">
+                                        <a href="#" class="navbar__notify-link">
+                                            <img src="https://lh3.googleusercontent.com/proxy/JDLTbxtG6iKCTnZnQGmgboPEKmBYXuiqAAQikVIcc8uZXkXoYhPSFGVUeQFUe1s-hiz47046beftuTk4fLFX7kRJ2mM9NFUVHb5wwUopbP7mKjatsxqSikLC5a99GNMD7gSD5UVlUJdjWYE" alt="" class="navbar__notify-img">
+                                            <div class="navbar__notify-info">
+                                                <span class="navbar__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                                <span class="navbar__notify-desc">Mô tả Mỹ phẩm Ohui chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="navbar__nofity-footer">
+                                    <a href="" class="navbar__nofity-footer-btn">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
                         </li>
     
                         <li class="navbar__item">
-                            <a href="#" class="navbar__link">Trợ giúp</a> 
+                            <a href="#" class="navbar__link">
+                                <i class="navbar__icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a> 
                         </li>
     
                         <li class="navbar__item navbar__item--separate">
